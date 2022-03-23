@@ -156,9 +156,10 @@ button.exit{
     position: fixed;
     top: 0px;
     right: 0;
-    width: 45%;
-    min-width: 222px;
+    width: 85%;
+    max-width: 350px;
     height: 100vh;
+	padding-right: 10px;
 	border-left: 3px solid #080;
     background: whitesmoke;
 	transform: scale3d(0,1,1);

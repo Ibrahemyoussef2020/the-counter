@@ -46,7 +46,7 @@ collect.onclick = ()=>{
 restart.onclick = function(){
     i = 0;
     screen.innerHTML =i;
-    valueAdd.value =screen.innerHTMLك
+    valueAdd.value =screen.innerHTML;
  }
 ///////////////////////////////////////////////////////
 //                 menu & aside                      //
