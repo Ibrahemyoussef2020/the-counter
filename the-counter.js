@@ -7,7 +7,6 @@ const led     = document.getElementById("background");
 let screen  = document.getElementById('screen');
 let i = 0;
 let id = 0;
-
 const plus = document.querySelector(".plus");
 const menu  = document.querySelector(".menu");
 const aside = document.querySelector(".aside");
@@ -36,7 +35,6 @@ led.onclick = function() {
     plus.classList.toggle("light-color");
     menu.classList.toggle("light-color");
     using.classList.toggle("light-color");
-
 }
 /////////////collect///////////////////
 collect.onclick = ()=>{
@@ -73,7 +71,6 @@ function side(){
 const ul = document.querySelector("ul");
 
 let lis = JSON.parse(localStorage.getItem("zekr"))||[] ;
-
 //////////////////////
 //    push array   //
 /////////////////////
@@ -117,10 +114,8 @@ const createElement = (pushZekr)=>{
         li.append(close , alZekr , count);
         ul.append(li);
 } 
-/////////////////////////////////////////////////
-lis.forEach(createElement);
-/////////////////////////////////////////
 
+lis.forEach(createElement);
 //////////////////////
 //  modify pushing //
 /////////////////////
@@ -132,12 +127,10 @@ plus.addEventListener("click",()=>{
 
     valueAdd.value = parseInt(valueAdd.value)+parseInt(screen.innerHTML);
 
-
     let counts = document.querySelectorAll(".count");
     let azkar  = document.querySelectorAll(".alZekr");
 
     for(let z = 0 ; z < azkar.length;z++){
-
 
         if(zekrAdd.value == azkar[z].innerHTML){
 
@@ -162,7 +155,6 @@ plus.addEventListener("click",()=>{
        zekrAdd.value = "";
        valueAdd.value = "";
 });
-
 //////////////////////////
 //  editing to element //
 /////////////////////////
