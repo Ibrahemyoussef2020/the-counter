@@ -38,13 +38,15 @@ led.onclick = function() {
 }
 /////////////collect///////////////////
 collect.onclick = ()=>{
-    screen.innerHTML = i++;
+    console.log('collect');
+    +screen.innerHTML++ ;
+    +valueAdd.value++;
 }
 ///////// restart ////////////
 restart.onclick = function(){
     i = 0;
-    screen.innerHTML =i;
-    valueAdd.value =screen.innerHTML;
+    screen.innerHTML = i;
+    valueAdd.value = screen.innerHTML
  }
 ///////////////////////////////////////////////////////
 //                 menu & aside                      //
@@ -125,7 +127,7 @@ plus.addEventListener("click",()=>{
         valueAdd.value = 0;
     }
 
-    valueAdd.value = parseInt(valueAdd.value)+parseInt(screen.innerHTML);
+    screen.innerHTML = 0
 
     let counts = document.querySelectorAll(".count");
     let azkar  = document.querySelectorAll(".alZekr");
@@ -175,14 +177,14 @@ ul.addEventListener("click" , function(e){
         zekrAdd.value = e.target.innerHTML;
         valueAdd.value = e.target.nextSibling.innerHTML;
         screen.innerHTML = 0;
-        i = 0;
+        //i = 0;
     }
     if(e.target.classList.contains("count")){
 
         valueAdd.value = e.target.innerHTML;
         zekrAdd.value = e.target.previousSibling.innerHTML;
         screen.innerHTML = 0;
-        i = 0;
+       // i = 0;
     }
 });
 ///////////////////////////
